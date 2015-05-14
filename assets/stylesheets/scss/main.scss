@@ -1,4 +1,6 @@
 
+$visual-grid: true;
+
 @import '../../../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../../../bower_components/neat/app/assets/stylesheets/neat';
 
@@ -35,13 +37,30 @@ UNIVERSAL
          box-sizing: border-box;
 }
 
+/*
+  ========================================
+  CLEARFIX
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
 
 /*============================
 BODY
 =============================*/
 
 body {
-  font-size: 62.5%;
+  /*font-size: 62.5%;*/
 }
 
 .background {
@@ -55,59 +74,57 @@ body {
     url("../../img/bg.jpg");
 }
 
-.container {
-  max-width: 1024px;
-  margin: 0 auto;
+.container-12-col {
+  @include outer-container(1024px);
 }
 
 img {
   max-width: 100%;
 }
 
+.clearfix {
+  overflow: auto;
+}
+
 /*============================
 MENU BAR
 =============================*/
 .menu-bar {
-  float: right;
+   @include span-columns(12);
+ }
+
+.menu-bar span {
+   @include span-columns(1 of 12, inline-block);
+   @include shift(6);
+   @include omega();
+   line-height: 61px;
+   margin-top: 1em;
+   font-size: 0.9em;
 }
 
+.menu-bar ul {
+  float: right;
+  display: inline-block;
+}
 
 .menu-bar span,
 .menu-bar i {
   color: $menu-bar-color;
 }
 
-.menu-bar span:first-child {
-  margin-right: 20px;
-}
-
-.menu-bar span {
-  margin-right: 100px;
-}
-
 .menu-bar i {
-  font-size: 35px;
-  vertical-align: middle;
-}
-
-.menu-bar ul,
-.menu-bar ul li {
-  display: inline-block;
+  font-size: 2.1em;
+  margin-left: 0.5em;
 }
 
 .menu-bar li {
+  display: inline-block;
   height: 61px;
   width: 61px;
-  vertical-align: middle;
 }
 
 .menu-bar li i {
   margin-top: 12px;
-  margin-left: 15px;
-}
-
-.menu-bar i.fa-facebook {
-  margin-left: 20px;
 }
 
 .menu-bar li:nth-child(2) {
@@ -130,25 +147,23 @@ MENU BAR
 NAV
 =============================*/
 nav {
-  clear: both;
-  margin: 0 auto;
+  @include span-columns(12);
 }
 
 nav ul {
-  @include outer-container(12);
   list-style: none;
   max-width: 100%;
   padding: 0;
 }
 
 nav ul li {
-  @include span-columns(3);
+  @include span-columns(3 of 12);
   background-color: $nav-ul-color;
   color: white;
   font-family: $verdana;
   text-align: center;
   padding: 10px 20px;
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 
 
@@ -156,30 +171,32 @@ nav ul li {
 HEADER
 =============================*/
 header {
+  @include span-columns(12);
   background-image: url("../../img/top-image.png");
   background-size: 100%;
   background-position: right top;
   background-repeat: no-repeat;
   border: 10px white solid;
-  @include outer-container(12);
+  margin-top: 2em;
 }
 
 header img {
   margin-top: 40px;
   margin-bottom: 40px;
-  @include span-columns(6);
+  @include span-columns(6 of 12);
 }
 
 /*============================
-ARTICLE SECTIONs
+ARTICLE SECTIONS
 =============================*/
-
-
-.articles ul.nav-bullets {
+.nav-bullets {
+  @include span-columns(12);
   text-align: center;
   list-style: none;
+  margin-top: 1em;
 }
-.articles li.article-nav-bullet {
+
+.nav-bullets li.article-nav-bullet {
   display: inline-block;
   height: 20px;
   width: 20px;
@@ -187,27 +204,31 @@ ARTICLE SECTIONs
   border-radius: 100%;
 }
 
-div.article-container {
-  @include outer-container(12);
+.articles {
+  @include span-columns(12);
+  margin-top: 0.7em;
 }
 
-.article-container article {
-  @include span-columns(4);
+.articles article {
+  @include span-columns(4 of 12);
   background-color: #fff;
   padding: 10px;
-  height: 100%;
+  max-height: 225px;
 }
 
-.article-container h2 {
-  font-size: 1.5em;
+.articles article h2 {
+  font-size: 1.1em;
   color: #000;
 }
 
-.article-container h2 {
+.articles article p {
+  font-size: 0.7em;
   color: #000;
 }
 
-.article-container span {
+
+.articles article p:last-child {
+  margin: auto;
   color: $nav-ul-color;
   text-align: center;
 }
@@ -217,14 +238,88 @@ SKATEBOARDERS SECTION
 =============================*/
 
 .skateboarders {
-  @include outer-container(12);
+  @include span-columns(12);
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  height: 480px;
 }
 
-.skateboarders img {
+.skateboarders div {
   border: 5px white solid;
+  display: inline-block;
 }
 
-.skateboarders div:first-child {
+.skateboarders .mountain {
+  @include span-columns(4 of 12, inline-block);
+  height: 234px;
+  max-width: 30%;
+}
+.skateboarders .mullen {
+  @include span-columns(4 of 12, inline-block);
+  height: 234px;
+  max-width: 30%;
+}
+
+.skateboarders .guerrero {
+  @include span-columns(4 of 12, inline-block);
+  height: 476px;
+  max-width: 30%;
+}
+
+.skateboarders .caballero {
+  @include span-columns(8 of 12, inline-block);
+  height: 234px;
+  max-width: 60%;
+  position: relative;
+  bottom: 14.6em;
+
+}
+
+.skateboarders h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+  margin: auto;
+}
+
+/* .column-left-top div:first-child {
+  float: left;
+  display: inline-block;
+  max-width: 50%;
+  height: 240px;
+}
+
+.column-left-top div:last-child {
+  float: right;
+  display: inline-block;
+  max-width: 50%;
+  height: 240px;
+} */
+
+.mountain {
+  background-image: url("../../img/sk8er-3.png");
+  background-repeat: no-repeat;
+}
+
+.mullen {
+  background-image: url("../../img/sk8er-4.png");
+  background-repeat: no-repeat;
+
+}
+
+.caballero {
+  background-image: url("../../img/sk8er-1.png");
+  background-repeat: no-repeat;
+}
+
+.guerrero {
+  background-image: url("../../img/sk8er-2.png");
+  background-repeat: no-repeat;
+
+}
+
+/* .skateboarders div:first-child {
   @include span-columns(4);
 }
 
@@ -241,17 +336,33 @@ SKATEBOARDERS SECTION
   @include span-columns(8);
   @include omega();
 }
-
-
-
-
-
-
+*/
 
 /*============================
 BOARDS SECTION
 =============================*/
 
+.container-10-col {
+  @include outer-container(1024px);
+}
+
+.boards {
+  @include span-columns(12);
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.boards img {
+  @include span-columns(1 of 12);
+}
+
+.boards img:first-child {
+  @include shift(1);
+}
+
 /*============================
 CONTACT-BOX SECTION
 =============================*/
+.contact-box {
+  @include span-columns(12);
+}
