@@ -8,12 +8,16 @@ $visual-grid: true;
 MIXINS
 =============================*/
 
+
+
 /*============================
 FONTS & COLORS
 =============================*/
 $menu-bar-color: #e2dedb;
 
 $nav-ul-color: #b3282e;
+
+$footer-social-icon-color: #747474;
 
 span {
   font-family: $verdana;
@@ -42,18 +46,8 @@ UNIVERSAL
   CLEARFIX
   ========================================
 */
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-}
+
+
 
 /*============================
 BODY
@@ -82,28 +76,24 @@ img {
   max-width: 100%;
 }
 
-.clearfix {
-  overflow: auto;
-}
-
 /*============================
 MENU BAR
 =============================*/
-.menu-bar {
+/* .menu-bar {
    @include span-columns(12);
+ } */
+
+.menu-content {
+   float: right;
  }
 
 .menu-bar span {
-   @include span-columns(1 of 12, inline-block);
-   @include shift(6);
-   @include omega();
    line-height: 61px;
    margin-top: 1em;
    font-size: 0.9em;
 }
 
 .menu-bar ul {
-  float: right;
   display: inline-block;
 }
 
@@ -148,6 +138,7 @@ NAV
 =============================*/
 nav {
   @include span-columns(12);
+  @include clearfix;
 }
 
 nav ul {
@@ -157,7 +148,7 @@ nav ul {
 }
 
 nav ul li {
-  @include span-columns(3 of 12);
+  @include span-columns(3);
   background-color: $nav-ul-color;
   color: white;
   font-family: $verdana;
@@ -213,16 +204,17 @@ ARTICLE SECTIONS
   @include span-columns(4 of 12);
   background-color: #fff;
   padding: 10px;
-  max-height: 225px;
 }
 
 .articles article h2 {
   font-size: 1.1em;
+  line-height: 1.155em;
   color: #000;
 }
 
 .articles article p {
   font-size: 0.7em;
+  line-height: 2em;
   color: #000;
 }
 
@@ -344,6 +336,7 @@ BOARDS SECTION
 
 .container-10-col {
   @include outer-container(1024px);
+  margin-top: 2em;
 }
 
 .boards {
@@ -364,5 +357,51 @@ BOARDS SECTION
 CONTACT-BOX SECTION
 =============================*/
 .contact-box {
-  @include span-columns(12);
+  @include outer-container(1024px);
+  margin-top: 2em;
+  background-color: #fff;
+}
+
+.contact-container {
+  @include span-columns(6);
+  background-color: #fff;
+  padding: 2em;
+}
+
+.contact-container li {
+  display: inline-block;
+  background-color: $footer-social-icon-color;
+}
+
+.contact-container li i {
+  color: #9c9c9c;
+  height: 38px;
+  width: 38px;
+  font-size: 2em;
+}
+
+.contact-box form {
+  @include span-columns(6);
+  padding: 2em;
+}
+
+.contact-box form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.contact-box form input:last-child {
+  background-color: $nav-ul-color;
+}
+
+.contact-box form textarea {
+  display: block;
+  width: 100%;
+  height: 4em;
+  margin-bottom: 2em;
+}
+
+.contact-container .social-icons {
+  padding: 0;
 }

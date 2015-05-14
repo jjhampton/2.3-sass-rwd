@@ -53,18 +53,6 @@ UNIVERSAL
   CLEARFIX
   ========================================
 */
-.group:before,
-.group:after {
-  content: "";
-  display: table; }
-
-.group:after {
-  clear: both; }
-
-.group {
-  clear: both;
-  *zoom: 1; }
-
 /*============================
 BODY
 =============================*/
@@ -86,35 +74,21 @@ body {
 img {
   max-width: 100%; }
 
-.clearfix {
-  overflow: auto; }
-
 /*============================
 MENU BAR
 =============================*/
-.menu-bar {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .menu-bar:last-child {
-    margin-right: 0; }
+/* .menu-bar {
+   @include span-columns(12);
+ } */
+.menu-content {
+  float: right; }
 
 .menu-bar span {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 6.17215%;
-  margin-left: 51.17883%;
-  margin-right: 0;
   line-height: 61px;
   margin-top: 1em;
   font-size: 0.9em; }
-  .menu-bar span:last-child {
-    margin-right: 0; }
 
 .menu-bar ul {
-  float: right;
   display: inline-block; }
 
 .menu-bar span,
@@ -155,6 +129,10 @@ nav {
   width: 100%; }
   nav:last-child {
     margin-right: 0; }
+  nav::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 nav ul {
   list-style: none;
@@ -238,17 +216,18 @@ ARTICLE SECTIONS
   margin-right: 2.35765%;
   width: 31.76157%;
   background-color: #fff;
-  padding: 10px;
-  max-height: 225px; }
+  padding: 10px; }
   .articles article:last-child {
     margin-right: 0; }
 
 .articles article h2 {
   font-size: 1.1em;
+  line-height: 1.155em;
   color: #000; }
 
 .articles article p {
   font-size: 0.7em;
+  line-height: 2em;
   color: #000; }
 
 .articles article p:last-child {
@@ -376,7 +355,8 @@ BOARDS SECTION
 .container-10-col {
   max-width: 1024px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 2em; }
   .container-10-col::after {
     clear: both;
     content: "";
@@ -407,9 +387,58 @@ BOARDS SECTION
 CONTACT-BOX SECTION
 =============================*/
 .contact-box {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  background-color: #fff; }
+  .contact-box::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.contact-container {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
-  .contact-box:last-child {
+  width: 48.82117%;
+  background-color: #fff;
+  padding: 2em; }
+  .contact-container:last-child {
     margin-right: 0; }
+
+.contact-container li {
+  display: inline-block;
+  background-color: #747474; }
+
+.contact-container li i {
+  color: #9c9c9c;
+  height: 38px;
+  width: 38px;
+  font-size: 2em; }
+
+.contact-box form {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  padding: 2em; }
+  .contact-box form:last-child {
+    margin-right: 0; }
+
+.contact-box form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 2em; }
+
+.contact-box form input:last-child {
+  background-color: #b3282e; }
+
+.contact-box form textarea {
+  display: block;
+  width: 100%;
+  height: 4em;
+  margin-bottom: 2em; }
+
+.contact-container .social-icons {
+  padding: 0; }
