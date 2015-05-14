@@ -1,0 +1,444 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
+
+/*============================
+MIXINS
+=============================*/
+/*============================
+FONTS & COLORS
+=============================*/
+span {
+  font-family: "Verdana", "Geneva", sans-serif; }
+
+p {
+  font-family: "Verdana", "Geneva", sans-serif; }
+
+.skateboarders h2 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+
+/*============================
+UNIVERSAL
+=============================*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+  ========================================
+  CLEARFIX
+  ========================================
+*/
+/*============================
+BODY
+=============================*/
+body {
+  /*font-size: 62.5%;*/ }
+
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../img/bg.jpg"); }
+
+.container-12-col {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container-12-col::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+img {
+  max-width: 100%; }
+
+/*============================
+MENU BAR
+=============================*/
+/* .menu-bar {
+   @include span-columns(12);
+ } */
+.menu-content {
+  float: right; }
+
+.menu-bar span {
+  line-height: 61px;
+  margin-top: 1em;
+  font-size: 0.9em; }
+
+.menu-bar ul {
+  display: inline-block; }
+
+.menu-bar span,
+.menu-bar i {
+  color: #e2dedb; }
+
+.menu-bar i {
+  font-size: 2.1em;
+  margin-left: 0.5em; }
+
+.menu-bar li {
+  display: inline-block;
+  height: 61px;
+  width: 61px; }
+
+.menu-bar li i {
+  margin-top: 12px; }
+
+.menu-bar li:nth-child(2) {
+  background-color: #445897; }
+
+.menu-bar li:nth-child(3) {
+  background-color: #ce8f43; }
+
+.menu-bar li:nth-child(4) {
+  background-color: #698ec3; }
+
+.menu-bar li:last-child {
+  background-color: #b72731; }
+
+/*============================
+NAV
+=============================*/
+nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  nav:last-child {
+    margin-right: 0; }
+  nav::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+nav ul {
+  list-style: none;
+  max-width: 100%;
+  padding: 0; }
+
+nav ul li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  background-color: #b3282e;
+  color: white;
+  font-family: "Verdana", "Geneva", sans-serif;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 0.9em; }
+  nav ul li:last-child {
+    margin-right: 0; }
+
+/*============================
+HEADER
+=============================*/
+header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-image: url("../../img/top-image.png");
+  background-size: 100%;
+  background-position: right top;
+  background-repeat: no-repeat;
+  border: 10px white solid;
+  margin-top: 2em; }
+  header:last-child {
+    margin-right: 0; }
+
+header img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  header img:last-child {
+    margin-right: 0; }
+
+/*============================
+ARTICLE SECTIONS
+=============================*/
+.nav-bullets {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  margin-top: 1em; }
+  .nav-bullets:last-child {
+    margin-right: 0; }
+
+.nav-bullets li.article-nav-bullet {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 100%; }
+
+.articles {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 0.7em; }
+  .articles:last-child {
+    margin-right: 0; }
+
+.articles article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-color: #fff;
+  padding: 10px; }
+  .articles article:last-child {
+    margin-right: 0; }
+
+.articles article h2 {
+  font-size: 1.1em;
+  line-height: 1.155em;
+  color: #000; }
+
+.articles article p {
+  font-size: 0.7em;
+  line-height: 2em;
+  color: #000; }
+
+.articles article p:last-child {
+  margin: auto;
+  color: #b3282e;
+  text-align: center; }
+
+/*============================
+SKATEBOARDERS SECTION
+=============================*/
+.skateboarders {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  height: 480px; }
+  .skateboarders:last-child {
+    margin-right: 0; }
+
+.skateboarders div {
+  border: 5px white solid;
+  display: inline-block; }
+
+.skateboarders .mountain {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  height: 234px;
+  max-width: 30%; }
+  .skateboarders .mountain:last-child {
+    margin-right: 0; }
+
+.skateboarders .mullen {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  height: 234px;
+  max-width: 30%; }
+  .skateboarders .mullen:last-child {
+    margin-right: 0; }
+
+.skateboarders .guerrero {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  height: 476px;
+  max-width: 30%; }
+  .skateboarders .guerrero:last-child {
+    margin-right: 0; }
+
+.skateboarders .caballero {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  height: 234px;
+  max-width: 60%;
+  position: relative;
+  bottom: 14.6em; }
+  .skateboarders .caballero:last-child {
+    margin-right: 0; }
+
+.skateboarders h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+  margin: auto; }
+
+/* .column-left-top div:first-child {
+  float: left;
+  display: inline-block;
+  max-width: 50%;
+  height: 240px;
+}
+
+.column-left-top div:last-child {
+  float: right;
+  display: inline-block;
+  max-width: 50%;
+  height: 240px;
+} */
+.mountain {
+  background-image: url("../../img/sk8er-3.png");
+  background-repeat: no-repeat; }
+
+.mullen {
+  background-image: url("../../img/sk8er-4.png");
+  background-repeat: no-repeat; }
+
+.caballero {
+  background-image: url("../../img/sk8er-1.png");
+  background-repeat: no-repeat; }
+
+.guerrero {
+  background-image: url("../../img/sk8er-2.png");
+  background-repeat: no-repeat; }
+
+/* .skateboarders div:first-child {
+  @include span-columns(4);
+}
+
+.skateboarders div:nth-child(2) {
+  @include span-columns(4);
+}
+
+.skateboarders div:nth-child(3) {
+  @include span-columns(4);
+  @include omega();
+  height: 100%
+}
+.skateboarders div:last-child {
+  @include span-columns(8);
+  @include omega();
+}
+*/
+/*============================
+BOARDS SECTION
+=============================*/
+.container-10-col {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em; }
+  .container-10-col::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.boards {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff; }
+  .boards:last-child {
+    margin-right: 0; }
+
+.boards img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%; }
+  .boards img:last-child {
+    margin-right: 0; }
+
+.boards img:first-child {
+  margin-left: 8.5298%; }
+
+/*============================
+CONTACT-BOX SECTION
+=============================*/
+.contact-box {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  background-color: #fff; }
+  .contact-box::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.contact-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-color: #fff;
+  padding: 2em; }
+  .contact-container:last-child {
+    margin-right: 0; }
+
+.contact-container li {
+  display: inline-block;
+  background-color: #747474; }
+
+.contact-container li i {
+  color: #9c9c9c;
+  height: 38px;
+  width: 38px;
+  font-size: 2em; }
+
+.contact-box form {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  padding: 2em; }
+  .contact-box form:last-child {
+    margin-right: 0; }
+
+.contact-box form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 2em; }
+
+.contact-box form input:last-child {
+  background-color: #b3282e; }
+
+.contact-box form textarea {
+  display: block;
+  width: 100%;
+  height: 4em;
+  margin-bottom: 2em; }
+
+.contact-container .social-icons {
+  padding: 0; }
