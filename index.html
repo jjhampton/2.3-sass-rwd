@@ -5,27 +5,27 @@
     <title>Document</title>
     <link rel= "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" href="assets/stylesheets/css/main.css">
   </head>
-  <body>
+  <body class="background">
     <div class="container">
       <section class="menu-bar">
         <span>SUBSCRIBE</span>
         <span>&#8226;</span>
-        <i class="fa fa-list"></i>
         <ul class="social-icons">
-          <li><i class="fa fa-facebook"></i></li>
-          <li><i class="fa fa-rss-square"></i></li>
-          <li><i class="fa fa-twitter-square"></i></li>
-          <li><i class="fa fa-youtube"></i></li>
+          <li><i class="fa fa-list"></i></li><!--
+          --><li><i class="fa fa-facebook"></i></li><!--
+          --><li><i class="fa fa-rss-square"></i></li><!--
+          --><li><i class="fa fa-twitter-square"></i></li><!--
+          --><li><i class="fa fa-youtube"></i></li>
         </ul>
       </section>
       <nav>
         <ul>
-          <li>- SK8T NEWS - </li>
-          <li>SKATEBOARDERS</li>
-          <li>BOARD DESIGN</li>
-          <li>CONTACT US</li>
+          <li>-- SK8T NEWS --</li>
+          <li>-- SKATEBOARDERS --</li>
+          <li>-- BOARD DESIGN --</li>
+          <li>-- CONTACT US --</li>
         </ul>
       </nav>
       <header>
@@ -33,39 +33,45 @@
         <img src="assets/img/peralta-logo.png">
       </header>
       <section class="articles">
-        <div class="nav-bullets">
-          <span class="article-nav-bullet"></span>
-          <span class="article-nav-bullet"></span>
-          <span class="article-nav-bullet"></span>
+        <ul class="nav-bullets">
+          <li class="article-nav-bullet"></li>
+          <li class="article-nav-bullet"></li>
+          <li class="article-nav-bullet"></li>
+        </ul>
+        <div class="article-container">
+          <article>
+            <h2>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h2>
+            <p>October 10, 2013</p>
+            <p>In eu gravida leo. Nunc ut nisl ornare, dictum nibh et, vulputate lacus. Quisque id lacinia nisi, nec interdum felis. Maecenas laoreet diam augue, sollicitudin auctor erat bibendum ac.</p>
+            <span>[ READ MORE ]</span>
+          </article>
+          <article>
+            <h2>Rodney Mullen: Pop an ollie and innovate! (TED Talk)</h2>
+            <p>March 10, 2013</p>
+            <p>In eu gravida leo. Nunc ut nisl ornare, dictum nibh et, vulputate lacus. Quisque id lacinia nisi, nec interdum felis. Maecenas laoreet diam augue, sollicitudin auctor erat bibendum ac.</p>
+            <span>[ READ MORE ]</span>
+          </article>
+          <article>
+            <h2>Ray Barbee Talks 'Ban This'</h2>
+            <p>October 4, 2013</p>
+            <p>In eu gravida leo. Nunc ut nisl ornare, dictum nibh et, vulputate lacus. Quisque id lacinia nisi, nec interdum felis. Maecenas laoreet diam augue, sollicitudin auctor erat bibendum ac. nec interdum felis. Maecenas laoreet diam augue.</p>
+            <span>[ READ MORE ]</span>
+          </article>
         </div>
-        <article>
-          <h2>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h2>
-          <p>October 10, 2013</p>
-          <p>In eu gravida leo. Nunc ut nisl ornare, dictum nibh et, vulputate lacus. Quisque id lacinia nisi, nec interdum felis. Maecenas laoreet diam augue, sollicitudin auctor erat bibendum ac.</p>
-          <span>[ READ MORE ]</span>
-        </article>
-        <article>
-          <h2>Rodney Mullen: Pop an ollie and innovate! (TED Talk)</h2>
-          <p>March 10, 2013</p>
-          <p>In eu gravida leo. Nunc ut nisl ornare, dictum nibh et, vulputate lacus. Quisque id lacinia nisi, nec interdum felis. Maecenas laoreet diam augue, sollicitudin auctor erat bibendum ac.</p>
-          <span>[ READ MORE ]</span>
-        </article>
-        <article>
-          <h2>Ray Barbee Talks 'Ban This'</h2>
-          <p>October 4, 2013</p>
-          <p>In eu gravida leo. Nunc ut nisl ornare, dictum nibh et, vulputate lacus. Quisque id lacinia nisi, nec interdum felis. Maecenas laoreet diam augue, sollicitudin auctor erat bibendum ac.</p>
-          <span>[ READ MORE ]</span>
-        </article>
       </section>
       <section class="skateboarders">
-        <h2>SKATEBOARDERS</h2>
-        <!--position absolute -->
-        <ul>
-          <li><img src="assets/img/sk8er-4.png" alt="Lance Mountain"></li>
-          <li><img src="assets/img/sk8er-3.png" alt="Rodney Mullen"></li>
-          <li><img src="assets/img/sk8er-2.png" alt="Tommy Guerrero"></li>
-          <li><img src="assets/img/sk8er-1.png" alt="Steve Caballero"></li>
-        </ul>
+        <div class="mountain">
+          <img src="assets/img/sk8er-4.png" alt="Lance Mountain">
+        </div>
+        <div class="mullen">
+          <img src="assets/img/sk8er-3.png" alt="Rodney Mullen">
+        </div>
+        <div class="guerrero">
+          <img src="assets/img/sk8er-2.png" alt="Tommy Guerrero">
+        </div>
+        <div class="caballero">
+            <img src="assets/img/sk8er-1.png" alt="Steve Caballero">
+        </div>
       </section>
       <section class="boards">
         <ul>
